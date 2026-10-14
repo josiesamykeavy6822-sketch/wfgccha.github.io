@@ -414,6 +414,12 @@ body{background:radial-gradient(circle at 50% -10%,rgba(0,113,227,.10),transpare
 .stat.err .num{color:#ff3b30!important;}
 .issue:hover{box-shadow:0 15px 40px rgba(255,59,48,.12);}
 .apple-nav{position:sticky;top:0;z-index:20;}
+
+/* ===== 非格式问题（标点、缩进等黄色提醒）保持黄色；仅格式问题用红色 ===== */
+.issue.hint{border-left-color:#FF9F0A!important;background:#FFF4D6!important;}
+.issue.hint .idx{background:#FF9F0A!important;color:#FFFFFF!important;}
+.issue.hint .where b{color:#A16207!important;}
+.issue.hint:hover{box-shadow:0 15px 40px rgba(255,159,10,.18)!important;}
 </style>
 </head>
 <body>
